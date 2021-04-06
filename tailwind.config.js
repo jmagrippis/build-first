@@ -1,11 +1,8 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+	mode: 'jit',
 	purge: ['./src/**/*.tsx', './src/**/*.css'],
-	variants: {
-		borderStyle: ['responsive', 'focus'],
-		backgroundColor: ['even', 'hover'],
-	},
 	theme: {
 		container: {
 			center: true,
