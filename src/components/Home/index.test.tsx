@@ -6,6 +6,6 @@ describe('Home', () => {
 	it('has a CTA', () => {
 		render(<Home />)
 
-		screen.getByRole('link', {name: 'Explore Episodes'})
+		screen.getByRole('link', {name: /Latest Episode/i})
 	})
 })
