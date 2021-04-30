@@ -1,7 +1,11 @@
 import {Cta} from 'components/Cta/Cta'
 import BuildSvg from './build.svg'
 
-export const Hero = () => (
+export type Props = {
+	latestEpisodeLink: string
+}
+
+export const Hero = ({latestEpisodeLink}: Props) => (
 	<section className="container py-4 px-2 lg:px-0 lg:grid lg:grid-cols-9 md:gap-x-8 lg:gap-x-16">
 		<div className="mb-8 lg:mb-0 text-xl lg:text-2xl lg:col-span-4 text-center lg:text-left lg:self-center">
 			<div className="mb-2">
@@ -12,11 +16,7 @@ export const Hero = () => (
 				Get into tech, advance your career and realise your ideas by building,
 				learning, iterating!
 			</p>
-			<Cta
-				href="https://www.youtube.com/watch?v=PutjsFe_E5k"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
+			<Cta href={latestEpisodeLink} target="_blank" rel="noopener noreferrer">
 				Watch the Latest Episode
 			</Cta>
 		</div>
