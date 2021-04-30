@@ -22,9 +22,8 @@ describe('navigation', () => {
 				cy.url().should('match', /\/$/)
 
 				// outbound links also exist
-				cy.findByRole('link', {name: 'github'})
-				cy.findByRole('link', {name: 'instagram'})
-				cy.findByRole('link', {name: 'twitter'})
+				cy.findByRole('link', {name: /youtube/i})
+				cy.findByRole('link', {name: /github/i})
 			})
 		})
 	})

@@ -1,9 +1,8 @@
 import Link from 'next/link'
 
+import YouTubeIcon from './youtube.svg'
+import GitHubIcon from './github-mark.svg'
 import MailIcon from './mail.svg'
-import GithubIcon from './github-mark.svg'
-import InstagramIcon from './instagram.svg'
-import TwitterIcon from './twitter.svg'
 
 export const Header = () => (
 	<header className="w-full bg-gray-800 text-teal-100">
@@ -17,6 +16,28 @@ export const Header = () => (
 			</div>
 			<ul className="flex flex-row">
 				<li className="ml-4">
+					<a
+						className="transition duration-300 hover:text-teal-300"
+						href="https://www.youtube.com/channel/UCvw69Hm5o2150tmgzSdNkyg"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="YouTube"
+					>
+						<YouTubeIcon title="YouTube Channel" width="1.5rem" />
+					</a>
+				</li>
+				<li className="ml-4">
+					<a
+						className="transition duration-300 hover:text-teal-300"
+						href="https://github.com/jmagrippis/build-first"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="GitHub"
+					>
+						<GitHubIcon title="The open-source repo at github" width="1.5rem" />
+					</a>
+				</li>
+				<li className="ml-4">
 					<Link href="/contact">
 						<a
 							className="transition duration-300 hover:text-teal-300"
@@ -25,39 +46,6 @@ export const Header = () => (
 							<MailIcon title="Contact us" width="1.5rem" />
 						</a>
 					</Link>
-				</li>
-				<li className="ml-4">
-					<a
-						className="transition duration-300 hover:text-teal-300"
-						href="https://github.com/build-first"
-						target="_blank"
-						rel="noopener noreferrer"
-						aria-label="github"
-					>
-						<GithubIcon title="Johnny's github" width="1.5rem" />
-					</a>
-				</li>
-				<li className="ml-4">
-					<a
-						className="transition duration-300 hover:text-teal-300"
-						href="https://www.instagram.com/jmagrippis/"
-						target="_blank"
-						rel="noopener noreferrer"
-						aria-label="instagram"
-					>
-						<InstagramIcon title="Johnny's instagram" width="1.5rem" />
-					</a>
-				</li>
-				<li className="ml-4">
-					<a
-						className="transition duration-300 hover:text-teal-300"
-						href="https://twitter.com/jmagrippis"
-						target="_blank"
-						rel="noopener noreferrer"
-						aria-label="twitter"
-					>
-						<TwitterIcon title="Johnny's twitter" width="1.5rem" />
-					</a>
 				</li>
 			</ul>
 		</nav>
