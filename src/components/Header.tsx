@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+import {YOUTUBE_CHANNEL_URI} from 'lib/constants'
 import YouTubeIcon from './youtube.svg'
 import GitHubIcon from './github-mark.svg'
 import MailIcon from './mail.svg'
@@ -18,7 +19,7 @@ export const Header = () => (
 				<li className="ml-4">
 					<a
 						className="transition duration-300 hover:text-teal-300"
-						href="https://www.youtube.com/channel/UCvw69Hm5o2150tmgzSdNkyg"
+						href={YOUTUBE_CHANNEL_URI}
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="YouTube"
