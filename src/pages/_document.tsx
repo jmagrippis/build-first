@@ -34,7 +34,7 @@ class CustomDocument extends Document {
 						async
 						defer
 						data-domain="buildfirst.tech"
-						src="https://plausible.io/js/plausible.js"
+						src="https://plausible.buildfirst.tech/js/index.js"
 					/>
 					<script
 						dangerouslySetInnerHTML={{
